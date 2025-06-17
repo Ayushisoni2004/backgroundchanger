@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .d1 {
+        width:200px;
+        margin:200px auto;
+        height:200px;
+        border:2px solid black;
+        padding:20px;
+    }
+   </style>
+</head>
+<body>
+     <input type="range" max="360" min="0" oninput="inputvalues()" id="txt"/>
+    <div class="d1">
+        
+    </div>
+
+      <script>
+        function inputvalues()
+        {
+            var range = document.querySelector('#txt');
+            var div = document.querySelector('.d1');
+            div.style.transform = 'rotate('+range.value+'deg)'
+           
+            console.log(range.value)
+
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{
+            height:200px;
+            width: 200px;
+            margin: 200px auto;
+            border: 2px solid greenyellow;
+        }
+    </style>
+</head>
+<body>
+   <input type="range" id="txt" oninput="movingRectangle()" max="360" min="0">
+   <div class="d1"></div>
+    
+<script>
+function movingRectangle()
+{
+    var range=document.querySelector("#txt");
+    var div=document.querySelector(".d1");
+    div.style.transform='rotate('+range.value+'deg)';
+    console.log(range.value);
+
+}
+
+
+</script>
+</body>
+</html>
